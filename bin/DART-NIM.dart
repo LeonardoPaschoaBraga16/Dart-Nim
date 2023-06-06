@@ -3,7 +3,7 @@ int option = 0;
 int pieces = 12;
 int maxPieces = 3;
 void main(List<String> arguments) {
-  print("Bem vindo ao inferno, vamos jogar?");
+  print("Bem vindo ao inferno, vamos começar?");
   Menu(option, pieces, maxPieces);
 }
 
@@ -36,7 +36,6 @@ void Menu(option, pieces, maxPieces) {
           print("Valor inválido, digite outro");
         }
       } while (maxPieces < 1);
-      Menu(option, pieces, maxPieces);
     } else if (option == 3) {
       print("--------------------------------------------------------");
       print(
