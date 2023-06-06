@@ -1,9 +1,8 @@
 import 'dart:io';
-
+int option = 0;
+int pieces = 12;
+int maxPieces = 3;
 void main(List<String> arguments) {
-  int option = 0;
-  int pieces = 12;
-  int maxPieces = 3;
   print("Bem vindo ao inferno, vamos jogar?");
   Menu(option, pieces, maxPieces);
 }
@@ -45,16 +44,12 @@ void Menu(option, pieces, maxPieces) {
     Competindo com uma máquina, perde aquele que tirar o ultimo palito do monte. 
     Há como escolher a quantidade de palitos que podem ser tirados, porém ela nunca poderá ser zero, assim como não se pode jogar NIM com 1 ou 0 palitos
     Tenha um bom jogo!""");
-      print("--------------------------------------------------------");
-      Menu(option, pieces, maxPieces);
-    } else if (option == 0) {
-      break;
+      print("--------------------------------------------------------");    
     }
   } while (option != 0);
 }
 
 void Game(pieces, maxPieces) {
-  int option = 0;
   while (pieces != 0) {
     print("Há ${pieces} palitos");
     print("Retire uma quantidade de palitos");
@@ -73,5 +68,4 @@ void Game(pieces, maxPieces) {
       print("Jogo acabou");
     }
   }
-  Menu(option, pieces, maxPieces);
 }
